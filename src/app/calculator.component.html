@@ -1,0 +1,37 @@
+<form name="calc" id="calculator">
+<table>
+  <tr>
+    <td>
+      <input  class="display" type="text" name="input">
+      <br>
+    </td>
+  </tr>
+  <tr class="controlPanel">
+    <td>
+      <input class="numbers" type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+      <input class="numbers" type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+      <input class="numbers" type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+      <input class="operation" type="button" name="division" value="/" OnClick="calc.input.value += '/'">
+      <input class="operation" type="button" name="square" value="^" OnClick="calc.input.value=Math.pow(calc.input.value,2)">
+      <br>
+      <input class="numbers" type="button" name="four" value="4" OnClick="calc.input.value += '4'">
+      <input class="numbers" type="button" name="five" value="5" OnClick="calc.input.value += '5'">
+      <input class="numbers" type="button" name="six" value="6" OnClick="calc.input.value += '6'">
+      <input class="operation" type="button" name="multiplication" value="*" OnClick="calc.input.value += '*'">
+      <input class="operation" type="button" name="percentage" value="%" OnClick="calc.input.value += '%'">
+      <br>
+      <input class="numbers" type="button" name="one" value="1" OnClick="calc.input.value += '1'">
+      <input class="numbers" type="button" name="two" value="2" OnClick="calc.input.value += '2'">
+      <input class="numbers" type="button" name="three" value="3" OnClick="calc.input.value += '3'">
+      <input class="operation" type="button" name="addition" value="+" OnClick="calc.input.value += '+'">
+      <input class="operation clear" type="button" name="clearall" value="AC" OnClick="calc.input.value = ''">
+      <br>
+      <input class="numbers" type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+      <input class="numbers" type="button" name="point" value="." OnClick="calc.input.value += '.'">
+      <input class="numbers" type="button" name="seven" value="+/-" OnClick="calc.input.value = '-' + calc.input.value">
+      <input class="operation" type="button" name="seven" value="-" OnClick="calc.input.value += '-'">
+      <input class="operation equal" type="button" name="equal" value="=" OnClick="calc.input.value=eval(calc.input.value)">
+    </td>
+  </tr>
+  </table>
+  </form>
